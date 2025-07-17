@@ -35,7 +35,6 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Görev Takip Uygulaması</h1>
       <BackgroundMusic />
       <TaskCreate onCreate={createTask} />
       <h1>Görevler</h1>
