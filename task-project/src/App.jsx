@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import TaskCreate from "./Components/TaskCreate";
 import TaskList from "./Components/TaskList";
+import BackgroundMusic from "./Components/BackgroundMusic";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -34,6 +35,8 @@ function App() {
   };
   return (
     <div className="App">
+      <h1>Görev Takip Uygulaması</h1>
+      <BackgroundMusic />
       <TaskCreate onCreate={createTask} />
       <h1>Görevler</h1>
       <TaskList
